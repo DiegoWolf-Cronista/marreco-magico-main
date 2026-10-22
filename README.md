@@ -4,7 +4,7 @@ Jogo educacional para a **Educação Infantil — Pré-escola II (5 e 6 anos)**,
 como solução tecnológica para escolas municipais: roda no navegador, **sem instalação,
 sem internet e sem cadastro**.
 
-![feito com HTML, CSS e JavaScript puro](https://img.shields.io/badge/HTML-CSS-JavaScript-blue)
+![feito com HTML, CSS e JavaScript]
 
 ---
 
