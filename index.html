@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1447">
+<meta name="description" content="Jogo educacional para Educação Infantil - Pré-escola II (5 e 6 anos)">
+<title>Marreco Mágico — Aventura do Saber</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="cenario" aria-hidden="true"></canvas>
+
+<canvas id="efeitos" aria-hidden="true"></canvas>
+
+<div id="decor" aria-hidden="true"></div>
+
+<section class="tela ativa" id="tela-inicio">
+  <div class="topo-mini">
+    <button class="btn-icone" id="btn-som" title="Ligar ou desligar o som" aria-label="Som">🔊</button>
+    <button class="btn-icone" id="btn-tela" title="Tela cheia" aria-label="Tela cheia">⛶</button>
+  </div>
+
+  <div class="centro">
+    <h1 class="logo"><span class="l1">Marreco</span><span class="l2">Mágico</span></h1>
+
+    <div class="apresenta">
+      <button type="button" class="mascote mascote--g mascote-clicavel" id="mascote-inicio" aria-label="Pipo, o marreco mágico"></button>
+      <div class="balao" id="balao-inicio">Oi! Eu sou o Pipo. Vamos brincar?</div>
+    </div>
+
+    <button type="button" class="btn btn-verde btn-jogar brilha" id="btn-jogar">▶ Jogar</button>
+  </div>
+</section>
+
+<section class="tela" id="tela-cadastro">
+  <div class="topo-mini topo-mini--esq">
+    <button class="btn-icone" id="cadastro-voltar" type="button" aria-label="Voltar">⬅️</button>
+  </div>
+  <div class="centro">
+    <form id="form-cadastro" class="cartao-cadastro" autocomplete="off">
+      <div class="cadastro-topo">
+        <div class="mascote mascote--m mascote-clicavel" id="mascote-cadastro" role="button" tabindex="0" aria-label="Ouvir a explicação de novo"></div>
+        <div class="balao balao--p">Como você se chama?</div>
+      </div>
+      <h2 class="titulo-pixel">Quem vai jogar?</h2>
+      <p class="cadastro-nota">Nada aqui é obrigatório: pode deixar em branco.</p>
+
+      <label class="campo" for="cad-nome">Nome da criança</label>
+      <input id="cad-nome" type="text" maxlength="18" placeholder="Ex.: Ana">
+
+      <label class="campo" for="cad-idade">Idade</label>
+      <input id="cad-idade" class="campo-idade" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="2" placeholder="Ex.: 5">
+
+      <label class="campo" for="cad-escola">Escola</label>
+      <input id="cad-escola" type="text" maxlength="40" placeholder="Nome da escola">
+
+      <button type="submit" class="btn btn-verde btn-grande brilha" id="cad-continuar">▶ Jogar</button>
+    </form>
+  </div>
+</section>
+
+<section class="tela" id="tela-mapa">
+  <header class="barra">
+    <button class="btn-icone" id="mapa-voltar" aria-label="Voltar">⬅️</button>
+    <div class="barra-titulo"><span id="mapa-avatar">🐨</span> <strong id="mapa-nome">Jogador</strong></div>
+    <span class="btn-icone fantasma" aria-hidden="true"></span>
+  </header>
+  <div class="conteudo">
+    <div class="mapa-topo">
+      <button type="button" class="mascote mascote--p mascote-clicavel" id="mascote-mapa" aria-label="Pipo"></button>
+      <h2 class="titulo-secao onda" id="titulo-mapa">Escolha uma aventura</h2>
+    </div>
+    <div class="mundos" id="mundos"></div>
+  </div>
+</section>
+
+<section class="tela" id="tela-jogo">
+  <header class="barra">
+    <button class="btn-icone" id="jogo-sair" aria-label="Voltar ao mapa">⬅️</button>
+    <div class="passos" id="passos"></div>
+    <button class="btn-icone" id="jogo-ouvir" title="Ouvir de novo" aria-label="Ouvir de novo">🔊</button>
+  </header>
+
+  <div class="conteudo">
+    <div class="nome-cena" id="nome-cena" aria-hidden="true"></div>
+    <div class="sequencia" id="sequencia" aria-hidden="true"></div>
+    <div class="cabecalho-jogo" id="cabecalho-jogo">
+      <div class="mascote mascote--p" id="mascote-jogo"></div>
+      <h2 class="enunciado" id="enunciado">…</h2>
+    </div>
+    <div class="palco" id="palco" hidden></div>
+    <div class="opcoes" id="opcoes"></div>
+  </div>
+
+  <div class="novo-nivel" id="novo-nivel" role="button" tabindex="-1" aria-label="Continuar para o próximo nível" hidden>
+    <div class="novo-nivel-caixa">
+      <div class="nivel-raios" aria-hidden="true"></div>
+      <div class="mascote mascote--g" id="mascote-nivel"></div>
+      <h2 class="nivel-titulo onda" id="nivel-titulo">Parabéns!</h2>
+      <p class="nivel-texto">Você passou para o</p>
+      <div class="nivel-selo" id="nivel-selo">Nível Médio</div>
+      <p class="nivel-continuar">👆 Toque para continuar</p>
+    </div>
+  </div>
+
+  <div class="feedback" id="feedback" hidden>
+    <div class="feedback-caixa">
+      <div class="mascote mascote--m" id="mascote-feedback"></div>
+      <p class="feedback-texto" id="feedback-texto">Muito bem!</p>
+    </div>
+  </div>
+</section>
+
+<section class="tela" id="tela-fim">
+  <div class="centro">
+    <div class="painel-fim">
+      <h2 class="titulo-secao onda" id="fim-titulo">Parabéns!</h2>
+      <div class="mascote mascote--g" id="mascote-fim"></div>
+      <div class="estrelas" id="fim-estrelas">★★★</div>
+      <p class="placar" id="fim-placar"></p>
+      <div class="linha">
+        <button class="btn btn-verde" id="fim-repetir">🔁 Jogar de novo</button>
+        <button class="btn btn-azul" id="fim-mapa">🗺️ Outras aventuras</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="game.js"></script>
+</body>
+</html>
