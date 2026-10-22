@@ -1,4 +1,4 @@
-# 🦆 Marreco Mágico — Aventura do Saber
+# Marreco Mágico — Aventura do Saber
 
 Jogo educacional para a **Educação Infantil — Pré-escola II (5 e 6 anos)**, desenvolvido
 como solução tecnológica para escolas municipais: roda no navegador, **sem instalação,
@@ -21,7 +21,7 @@ Recomenda-se usar o botão **⛶ tela cheia** com as crianças.
 
 ---
 
-## 🎯 As 6 aventuras
+##  As 6 aventuras
 
 As 40 perguntas vêm do documento de Curricularização. Cada aventura apresenta as perguntas
 da sua categoria **em ordem sorteada** — a cada partida a sequência muda, para a criança
@@ -35,10 +35,10 @@ não decorar a ordem.
 **Jogo da memória:** quando as duas cartas não formam par, não aparece mensagem de erro;
 elas simplesmente desviram sozinhas depois de pouco mais de 1 segundo, como num jogo da
 memória de verdade. Completar o jogo da memória conta como acerto.
-| 🎨 **Cores e Formas** | Cores, Formas e Percepção Visual | 17 a 22 |
-| 🧭 **Onde Está?** | Noções de Espaço e Direção | 23 a 28 |
-| 🐾 **Animais** | Animais e Conhecimentos do Mundo | 29 a 34 |
-| 🧠 **Atenção** | Atenção, Memória e Raciocínio | 35 a 40 |
+|  **Cores e Formas** | Cores, Formas e Percepção Visual | 17 a 22 |
+|  **Onde Está?** | Noções de Espaço e Direção | 23 a 28 |
+|  **Animais** | Animais e Conhecimentos do Mundo | 29 a 34 |
+|  **Atenção** | Atenção, Memória e Raciocínio | 35 a 40 |
 
 **Conteúdos transversais:** compreensão auditiva (todo enunciado é falado),
 percepção visual (figura igual, diferente, sequências, memória), cores e animais
@@ -46,22 +46,22 @@ percepção visual (figura igual, diferente, sequências, memória), cores e ani
 
 ---
 
-## 🌈 Uma viagem por cenários mágicos
+##  Uma viagem por cenários mágicos
 
 A cada pergunta o fundo muda, com uma transição suave e o nome do lugar aparecendo no topo.
 São 9 cenários em pixel art, todos animados e sorteados a cada partida:
 
 | Cenário | O que se mexe |
 |---|---|
-| 🌲 Floresta Mágica (início e mapa) | raios de sol girando, nuvens, borboletas, coelhinhos pulando |
-| 🌸 Campo de Flores | arco-íris, balão de ar quente, pipa, borboletas, coelhos, pétalas ao vento |
-| 🏖️ Praia do Sol | raios de sol, gaivotas, pipa, brilho no mar, caranguejo andando de lado |
-| ❄️ Montanhas de Neve | neve caindo, coelhinho, boneco de neve |
-| 🐠 Fundo do Mar | peixes, águas-vivas, algas balançando, bolhas, baú do tesouro |
-| 🌅 Lago do Pôr do Sol | família de patinhos nadando, reflexos na água, pássaros, vaga-lumes |
-| 🍭 Reino dos Doces | balão de ar quente, pirulitos, balinhas caindo |
-| 🌙 Noite Estrelada | aurora colorida, estrelas piscando, estrela cadente, cogumelos que brilham |
-| 🏰 Castelo nas Nuvens | balões de ar quente, balões subindo, ilhas flutuantes |
+|  Floresta Mágica (início e mapa) | raios de sol girando, nuvens, borboletas, coelhinhos pulando |
+|  Campo de Flores | arco-íris, balão de ar quente, pipa, borboletas, coelhos, pétalas ao vento |
+|  Praia do Sol | raios de sol, gaivotas, pipa, brilho no mar, caranguejo andando de lado |
+|  Montanhas de Neve | neve caindo, coelhinho, boneco de neve |
+| Fundo do Mar | peixes, águas-vivas, algas balançando, bolhas, baú do tesouro |
+|  Lago do Pôr do Sol | família de patinhos nadando, reflexos na água, pássaros, vaga-lumes |
+|  Reino dos Doces | balão de ar quente, pirulitos, balinhas caindo |
+|  Noite Estrelada | aurora colorida, estrelas piscando, estrela cadente, cogumelos que brilham |
+|  Castelo nas Nuvens | balões de ar quente, balões subindo, ilhas flutuantes |
 
 **Outras animações e decorações:**
 
@@ -96,12 +96,12 @@ tela final de sempre, com as estrelas.
 
 | Aventura | Fácil | Médio | Difícil |
 |---|---|---|---|
-| 🔢 Matemática | 1–4 | 5–7 | 8 |
-| 🔤 Português | 9–11 | 12–14 | 15–16 |
-| 🎨 Cores e Formas | 17–19 | 20–21 | 22 |
-| 🧭 Onde Está? | 23–24 | 25, 26, 28 | 27 |
-| 🐾 Animais | 29–31 | 32–33 | 34 |
-| 🧠 Atenção | 35 | 36–38 | 39–40 |
+|  Matemática | 1–4 | 5–7 | 8 |
+|  Português | 9–11 | 12–14 | 15–16 |
+|  Cores e Formas | 17–19 | 20–21 | 22 |
+|  Onde Está? | 23–24 | 25, 26, 28 | 27 |
+|  Animais | 29–31 | 32–33 | 34 |
+|  Atenção | 35 | 36–38 | 39–40 |
 
 ---
 
